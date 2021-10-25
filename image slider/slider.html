@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        .slider-page{
+            width: 620px;
+            height: 480px;
+            margin: 100px auto;
+            border: 5px solid #ccc;
+            -webkit-box-shadow: 0px 0px 5px grey;
+            -o-box-shadow: 0px 0px 5px grey;
+            -moz-box-shadow: 0px 0px 5px grey;
+            box-shadow: 0px 0px 5px grey;
+            overflow: hidden;
+        }
+
+        .slider{
+            width: 3520px;
+            height: 480px;
+            float: left;
+            background: red;
+            position: relative;
+            -webkit-animation: slider 10s infinite;
+            -o-animation: slider 10s infinite;
+            -moz-animation: slider 10s infinite;
+            animation: slider 10s infinite;
+        }
+
+        img{
+            float: left;
+        }
+
+        @-webkit-keyframes slider{
+            0%{top: 0;left: 0;}
+            10%{top: 0;left: -720px;}
+            20%{top: 0;left: -720px;}
+            30%{top: 0;left: -1440px;}
+            40%{top: 0;left: -1440px;}
+            50%{top: 0;left: -2140px;}
+            60%{top: 0;left: -2140px;}
+            70%{top: 0;left: -2880px;}
+            80%{top: 0;left: -2880px;}
+            100%{top: 0;left: -2880px;}
+        }
+
+        @-o-keyframes slider{
+            0%{top: 0;left: 0;}
+            10%{top: 0;left: -720px;}
+            20%{top: 0;left: -720px;}
+            30%{top: 0;left: -1440px;}
+            40%{top: 0;left: -1440px;}
+            50%{top: 0;left: -2140px;}
+            60%{top: 0;left: -2140px;}
+            70%{top: 0;left: -2880px;}
+            80%{top: 0;left: -2880px;}
+            100%{top: 0;left: -2880px;}
+        }
+
+        @-moz-keyframes slider{
+            0%{top: 0;left: 0;}
+            10%{top: 0;left: -720px;}
+            20%{top: 0;left: -720px;}
+            30%{top: 0;left: -1440px;}
+            40%{top: 0;left: -1440px;}
+            50%{top: 0;left: -2140px;}
+            60%{top: 0;left: -2140px;}
+            70%{top: 0;left: -2880px;}
+            80%{top: 0;left: -2880px;}
+            100%{top: 0;left: -2880px;}
+        }
+
+
+        @keyframes slider{
+            0%{top: 0;left: 0;}
+            10%{top: 0;left: -720px;}
+            20%{top: 0;left: -720px;}
+            30%{top: 0;left: -1440px;}
+            40%{top: 0;left: -1440px;}
+            50%{top: 0;left: -2140px;}
+            60%{top: 0;left: -2140px;}
+            70%{top: 0;left: -2880px;}
+            80%{top: 0;left: -2880px;}
+            100%{top: 0;left: -2880px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-page">
+        <div class="slider">
+            <img src="1.jpg" alt="" width="700" height="480">
+            <img src="2.jpg" alt="" width="700" height="480">
+            <img src="3.jpg" alt="" width="700" height="480">
+            <img src="5.png" alt="" width="700" height="480">
+            <img src="1.jpg" alt="" width="700" height="480">
+        </div>
+    </div>
+</body>
+</html>

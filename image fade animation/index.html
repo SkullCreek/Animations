@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade Image Animation</title>
+    <style>
+        .fade-animation{
+            border: 20px solid red;
+            margin: 100px auto;
+            background-image: url(1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 720px;
+            height: 480px;
+        }
+
+        .fade-animation:hover{
+            -webkit-animation:fade 12s infinite;
+            -o-animation:fade 12s infinite;
+            -moz-animation:fade 12s infinite;
+            animation:fade 12s infinite;
+        }
+
+        @-webkit-keyframes fade{
+            0%{background-image: url(2.jpg);background-image: cover;}
+            25%{background-image: url(3.jpg);background-image: cover;}
+            50%{background-image: url(1.jpg);background-image: cover;}
+            100%{background-image: url(5.png);background-image: cover;}
+        }
+
+        @-o-keyframes fade{
+            0%{background-image: url(2.jpg);background-image: cover;}
+            25%{background-image: url(3.jpg);background-image: cover;}
+            50%{background-image: url(1.jpg);background-image: cover;}
+            100%{background-image: url(5.png);background-image: cover;}
+        }
+
+        @-moz-keyframes fade{
+            0%{background-image: url(2.jpg);background-image: cover;}
+            25%{background-image: url(3.jpg);background-image: cover;}
+            50%{background-image: url(1.jpg);background-image: cover;}
+            100%{background-image: url(5.png);background-image: cover;}
+        }
+
+        @keyframes fade{
+            0%{background-image: url(2.jpg);background-image: cover;}
+            25%{background-image: url(3.jpg);background-image: cover;}
+            50%{background-image: url(1.jpg);background-image: cover;}
+            100%{background-image: url(5.png);background-image: cover;}
+        }
+    </style>
+</head>
+<body>
+    <div class="fade-animation"></div>
+</body>
+</html>
