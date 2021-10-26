@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Effect</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            min-height: 100vh;
+            place-items: center;
+            display: grid;
+            background-color: rgb(145, 145, 145);
+        }
+
+        .card{
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+            transition: 0.3s;
+            padding: 30px 50px;
+            background: whitesmoke;
+            cursor: pointer;
+        }
+
+        .imgbox{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform: translateY(-80px);
+            z-index: 99;
+        }
+
+        img{
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+        }
+
+        .content{
+            padding: 10px 20px;
+            text-align: center;
+            transform: translateY(-450px);
+            opacity: 0;
+        }
+
+        .card:hover{
+            height: 320px;
+        }
+        .card:hover .content{
+            opacity: 1;
+            transform: translateY(-180px);
+        }
+        h2{
+            color: rgb(145, 145, 145);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="imgbox">
+            <img src="3.jpg" alt="">
+        </div>
+        <div class="content">
+            <h2>keep smilling</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, doloribus voluptate quisquam ut officia saepe accusantium temporibus accusamus rem nemo.</p>
+        </div>
+    </div>
+</body>
+</html>

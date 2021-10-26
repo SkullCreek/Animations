@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover button</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            min-height: 100vh;
+            place-items: center;
+            display: grid;
+            background-color: whitesmoke;
+        }
+        button{
+            padding: 15px 45px;
+            color: white;
+            font-size: 30px;
+            background-color: orangered;
+            cursor: pointer;
+            text-transform: uppercase;
+            position: relative;
+            border: none;
+            border-radius: 20px;
+        }
+
+        button::before{
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 40px;
+            height: 40px;
+            transition: all 0.3s;
+            border-top: 5px solid crimson ;
+            border-left: 5px solid crimson ;
+        }
+        button::after{
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            width: 40px;
+            height: 40px;
+            transition: all 0.3s;
+            border-bottom: 5px solid crimson ;
+            border-right: 5px solid crimson ;
+        }
+        button:hover::before, button:hover::after{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <button>Hello</button>
+</body>
+</html>
