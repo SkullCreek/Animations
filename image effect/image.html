@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image effect</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main-header{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .design{
+            position: relative;
+            width: 400px;
+            height: 400px;
+        }
+
+        .design > *, .blend > *{
+            position: absolute;
+            width: 400px;
+            height: 400px;
+        }
+
+        #rotateborder{
+            border: 15px solid #eb311f;
+            transform: rotate(45deg);
+            box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .data-white{
+            background-color: white;
+        }
+
+        .blend{
+            mix-blend-mode: multiply;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header">
+        <div class="design">
+            <img src="1.jpg" alt="img">
+            <div id="rotateborder"></div>
+            <div class="grid">
+                <div class="data-white"></div>
+                <div></div>
+                <div></div>
+                <div class="data-white"></div>
+            </div>
+        
+            
+            <div class="blend">
+                <img src="1.jpg" alt="img">
+                <div class="grid">
+                    <div></div>
+                    <div class="data-white"></div>
+                    <div class="data-white"></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
